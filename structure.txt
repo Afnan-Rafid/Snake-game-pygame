@@ -1,0 +1,20 @@
+Steps to develop snake:
+1. Installing pygame
+2. creating a blank canvas & game Loop
+3. creating the food
+4. creating the snake
+5. moving the snake
+6. making the snake eat the food
+7. making the snake grew longer
+8. checking for collision with edges & tail
+9. adding title & frame
+10. keeping score
+11. adding sounds
+
+
+
+Game Loop :
+
+1. Event Handling
+2. Updating Positions
+3. Drawing Objects
