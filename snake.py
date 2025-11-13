@@ -15,7 +15,8 @@ class Food:
         self.position = Vector2(5,6)
     def draw(self):
         food_rect = pg.Rect(self.position.x*cell_size,self.position.y*cell_size,cell_size,cell_size )
-        pg.draw.rect(screen,DARK_GREEN,food_rect)
+        screen.blit(food_surface,food_rect)
+
 screen = pg.display.set_mode((cell_size*number_of_cells,cell_size*number_of_cells))
 
 pg.display.set_caption("Retro Snake")
@@ -23,6 +24,7 @@ pg.display.set_caption("Retro Snake")
 clock = pg.time.Clock()
 
 food =Food()
+food_surface = pg.image.load("Graphics/food.png")
 
 
 while True:
